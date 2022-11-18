@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>3D Lanland Pages </title>
+    <style>
+        body {margin: 0;}
+    </style>
+    
+</head>
+<!-- 1. run npm install 2. npx parcel src/index.html   -->
+<!-- this app is bundled with istparcel bundler  -->
+<body>
+    <h1>Hello, World!</h1>
+
+    <script id="vertexShader" type="vertex">
+        void main() {
+            gl_Position = projectionMatrix * modelViewMatrix * Vector4(position, 1.0);
+        }</script>
+
+    <script id="fragmentShader" type="fragment">
+         void main() {
+             gl_FragColor = vec4(0.1, 1.0, 1,0);
+         }</script>
+    <link rel="stylesheet" href="./src/styles.css" />
+    <!-- <script type="module" src="app.js"></script> -->
+    <!-- <script src="./index.html" type="module"></script> -->
+</body>
+</html>

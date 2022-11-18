@@ -1,0 +1,19 @@
+{
+  "name": "project1",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "npx parcel ./index.html"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "dat.gui": "^0.7.9",
+    "three": "^0.137.5",
+    "three-orbitcontrols": "^2.110.3"
+  },
+  "devDependencies": {
+    "parcel": "^2.3.2"
+  }
+}
